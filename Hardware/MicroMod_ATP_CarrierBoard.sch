@@ -28653,8 +28653,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
-<part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="3V3_LED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="VIN_LED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_05" device="NO_SILK"/>
 <part name="J10" library="SparkFun-Connectors" deviceset="CONN_05" device="VERT_FEMALE_HEADER"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -29044,10 +29044,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY7" gate="G$1" x="111.76" y="200.66" smashed="yes">
 <attribute name="VALUE" x="111.76" y="203.454" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="JP1" gate="G$1" x="142.24" y="198.12" smashed="yes">
+<instance part="3V3_LED" gate="G$1" x="142.24" y="198.12" smashed="yes">
 <attribute name="NAME" x="139.7" y="200.66" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="JP2" gate="G$1" x="142.24" y="210.82" smashed="yes">
+<instance part="VIN_LED" gate="G$1" x="142.24" y="210.82" smashed="yes">
 <attribute name="NAME" x="139.7" y="213.36" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J3" gate="G$1" x="381" y="96.52" smashed="yes" rot="R180">
@@ -29288,11 +29288,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="208.28" y="144.78"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="VIN_LED" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="210.82" x2="149.86" y2="210.82" width="0.1524" layer="91" style="longdash"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="149.86" y1="210.82" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="3V3_LED" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="198.12" x2="149.86" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="198.12" x2="149.86" y2="198.12" width="0.1524" layer="91"/>
 <junction x="149.86" y="198.12"/>
@@ -30467,14 +30467,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$3" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="3V3_LED" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="198.12" x2="137.16" y2="198.12" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="VIN_LED" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="210.82" x2="137.16" y2="210.82" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
