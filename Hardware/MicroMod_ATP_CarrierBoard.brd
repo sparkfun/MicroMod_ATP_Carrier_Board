@@ -169,11 +169,15 @@
 <text x="71.0692" y="41.1734" size="1.778" layer="21" ratio="15">-</text>
 <text x="47.498" y="-16.002" size="1.778" layer="51" font="vector" ratio="15">Elias Santistevan</text>
 <dimension x1="0" y1="55.88" x2="0" y2="0" x3="-8.35" y3="27.94" textsize="1.778" layer="47" unit="inch"/>
-<wire x1="0" y1="55.88" x2="86.36" y2="55.88" width="0.2032" layer="20"/>
-<wire x1="86.36" y1="55.88" x2="86.36" y2="0" width="0.2032" layer="20"/>
-<wire x1="86.36" y1="0" x2="0" y2="0" width="0.2032" layer="20"/>
+<wire x1="2.54" y1="55.88" x2="83.82" y2="55.88" width="0.2032" layer="20"/>
+<wire x1="83.82" y1="55.88" x2="86.36" y2="53.34" width="0.2032" layer="20" curve="-90"/>
+<wire x1="86.36" y1="53.34" x2="86.36" y2="2.54" width="0.2032" layer="20"/>
+<wire x1="86.36" y1="2.54" x2="83.82" y2="0" width="0.2032" layer="20" curve="-90"/>
+<wire x1="83.82" y1="0" x2="2.54" y2="0" width="0.2032" layer="20"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.2032" layer="20" curve="-90"/>
+<wire x1="0" y1="2.54" x2="0" y2="53.34" width="0.2032" layer="20"/>
+<wire x1="0" y1="53.34" x2="2.54" y2="55.88" width="0.2032" layer="20" curve="-90"/>
 <dimension x1="83.836" y1="0" x2="0" y2="0" x3="41.918" y3="-5.08" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<wire x1="0" y1="0" x2="0" y2="55.88" width="0.2032" layer="20"/>
 <circle x="19.812" y="32.639" radius="0.508" width="0" layer="21"/>
 </plain>
 <libraries>
@@ -28083,9 +28087,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="VALUE" x="10.16" y="22.298" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="4.572" y="4.572" smashed="yes"/>
-<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="85.487" y="55.118" smashed="yes"/>
+<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="81.677" y="51.308" smashed="yes"/>
 <element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="4.572" y="4.572" smashed="yes" rot="MR0"/>
-<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="85.487" y="55.118" smashed="yes" rot="MR0"/>
+<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="81.677" y="51.308" smashed="yes" rot="MR0"/>
 <element name="H1" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="83.82" y="53.34" smashed="yes">
 <attribute name="NAME" x="83.82" y="55.372" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="83.82" y="51.308" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
