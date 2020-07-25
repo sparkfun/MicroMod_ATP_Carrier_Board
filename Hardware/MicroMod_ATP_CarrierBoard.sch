@@ -29539,9 +29539,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="J6" gate="J1" pin="TX1"/>
 </segment>
 <segment>
-<wire x1="287.02" y1="12.7" x2="307.34" y2="12.7" width="0.1524" layer="91"/>
-<label x="307.34" y="12.7" size="1.27" layer="95" xref="yes"/>
-<wire x1="287.02" y1="12.7" x2="287.02" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="104.14" x2="307.34" y2="104.14" width="0.1524" layer="91"/>
+<label x="307.34" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="287.02" y1="104.14" x2="287.02" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="58.42" x2="287.02" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="J24" gate="G$1" pin="8"/>
 <wire x1="281.94" y1="58.42" x2="287.02" y2="58.42" width="0.1524" layer="91"/>
