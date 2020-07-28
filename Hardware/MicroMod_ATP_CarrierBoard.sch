@@ -29265,6 +29265,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="QWIIC_LOGO" device="_5MM"/>
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="EN" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -29679,6 +29680,9 @@ and USB-C at the same time.</text>
 <instance part="TP1" gate="G$1" x="393.7" y="200.66" smashed="yes">
 <attribute name="NAME" x="391.16" y="203.2" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="391.16" y="198.12" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="EN" gate="G$1" x="17.78" y="121.92" smashed="yes">
+<attribute name="NAME" x="16.51" y="124.206" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -30492,9 +30496,9 @@ and USB-C at the same time.</text>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="33.02" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
-<label x="30.48" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J6" gate="J1" pin="3.3V_EN"/>
+<pinref part="EN" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="121.92" x2="10.16" y2="121.92" width="0.1524" layer="91"/>
+<label x="10.16" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="G1" class="0">
@@ -31097,6 +31101,13 @@ and USB-C at the same time.</text>
 <net name="N$6" class="0">
 <segment>
 <wire x1="292.1" y1="43.18" x2="292.1" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="J6" gate="J1" pin="3.3V_EN"/>
+<pinref part="EN" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
