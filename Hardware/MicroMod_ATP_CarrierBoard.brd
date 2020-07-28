@@ -3,10 +3,10 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="3" fill="1" visible="yes" active="yes"/>
@@ -2922,6 +2922,17 @@ Combined footprint configuration
 <rectangle x1="9.56" y1="0.54" x2="10.76" y2="2.74" layer="29" rot="R180"/>
 <rectangle x1="9.56" y1="0.54" x2="10.76" y2="2.74" layer="31" rot="R180"/>
 <smd name="2" x="2.54" y="1.65" dx="2" dy="1" layer="1" rot="R90" stop="no"/>
+</package>
+<package name="PAD.03X.05">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 </library>
@@ -31597,6 +31608,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="U$84" library="fl2" package="#CIPO#DAT0#6" value="" x="30.48" y="49.149" smashed="yes" rot="MR270"/>
 <element name="U$145" library="D1_again" package="D10" value="" x="76.2" y="54.356" smashed="yes" rot="MR270"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="QWIIC_5MM" value="QWIIC_LOGO_5MM" x="68.326" y="23.368" smashed="yes" rot="MR0"/>
+<element name="TP1" library="SparkFun-Connectors" package="PAD.03X.05" value="TEST-POINT3X5" x="58.42" y="35.56" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="DAT1">
@@ -32100,9 +32112,14 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="45.339" y1="36.449" x2="46.482" y2="35.306" width="0.1524" layer="16"/>
 <wire x1="63.1882" y1="37.3888" x2="63.366" y2="37.211" width="0.1524" layer="1"/>
 <wire x1="48.02555" y1="36.322" x2="49.09235" y2="37.3888" width="0.1524" layer="1"/>
-<wire x1="63.1882" y1="37.3888" x2="49.09235" y2="37.3888" width="0.1524" layer="1"/>
+<wire x1="63.1882" y1="37.3888" x2="58.42" y2="37.3888" width="0.1524" layer="1"/>
+<wire x1="49.09235" y1="37.3888" x2="58.42" y2="37.3888" width="0.1524" layer="1"/>
 <wire x1="63.366" y1="38.862" x2="63.366" y2="40.0878" width="0.1778" layer="1"/>
 <wire x1="63.366" y1="40.0878" x2="63.754" y2="40.4758" width="0.1778" layer="1"/>
+<contactref element="TP1" pad="P$1"/>
+<wire x1="58.42" y1="37.3888" x2="58.42" y2="36.83" width="0.1524" layer="1"/>
+<via x="58.42" y="36.83" extent="1-16" drill="0.35"/>
+<wire x1="58.42" y1="36.83" x2="58.42" y2="35.56" width="0.1524" layer="16"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="J2" pad="2"/>
