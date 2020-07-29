@@ -26641,6 +26641,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.85" y1="0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
 <wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
 </package>
+<package name="DO-214BA">
+<description>&lt;h3&gt;Physical Specifications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Body Size: 4.57mm x 3.94mm
+&lt;li&gt;Pitch: 4.07mm
+&lt;li&gt; Pad Size: 1.52mm x 2.21mm
+&lt;li&gt; Total Overall Size: 5.59mm
+&lt;/ul&gt;</description>
+<smd name="A" x="-2.032" y="0" dx="1.52" dy="2.21" layer="1"/>
+<smd name="C" x="2.038" y="0" dx="1.52" dy="2.21" layer="1"/>
+<wire x1="-2.332" y1="-2" x2="2.238" y2="-2" width="0.1" layer="51"/>
+<wire x1="2.238" y1="-2" x2="2.238" y2="2" width="0.1" layer="51"/>
+<wire x1="2.238" y1="2" x2="-2.332" y2="2" width="0.1" layer="51"/>
+<wire x1="-2.332" y1="2" x2="-2.332" y2="-2" width="0.1" layer="51"/>
+<rectangle x1="3.018" y1="-1.15" x2="3.418" y2="1.2" layer="21"/>
+<rectangle x1="0.968" y1="-1.55" x2="1.768" y2="1.5" layer="51"/>
+<wire x1="-2.982" y1="2.1" x2="-2.982" y2="-2.15" width="0.1" layer="39"/>
+<wire x1="-2.982" y1="-2.15" x2="2.968" y2="-2.15" width="0.1" layer="39"/>
+<wire x1="2.968" y1="-2.15" x2="2.968" y2="2.1" width="0.1" layer="39"/>
+<wire x1="2.968" y1="2.1" x2="-2.982" y2="2.1" width="0.1" layer="39"/>
+<text x="-2.286" y="2.159" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<text x="-2.413" y="-2.794" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE-SCHOTTKY">
@@ -26785,6 +26808,18 @@ Allows current flow in one direction, but allows reverse flow when above breakdo
 <technology name="">
 <attribute name="PROD_ID" value="DIO-14072"/>
 <attribute name="VALUE" value="3A/10V/280mV"/>
+</technology>
+</technologies>
+</device>
+<device name="-LSM115JE3" package="DO-214BA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-15271" constant="no"/>
+<attribute name="VALUE" value="1A/15V/220mV" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -29266,6 +29301,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="QWIIC_LOGO" device="_5MM"/>
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="EN" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-LSM115JE3" value="1A/15V/220mV"/>
 </parts>
 <sheets>
 <sheet>
@@ -29277,9 +29313,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="228.6" y="228.6" size="1.778" layer="97">1mAhr Capacity</text>
 <text x="121.666" y="268.986" size="1.778" layer="97" font="vector">Take care when closing this jumper,
  it removes the 6V/2A fuse. </text>
-<text x="381.254" y="274.066" size="2.54" layer="94" font="vector" align="center">SWD</text>
+<text x="386.334" y="274.066" size="2.54" layer="94" font="vector" align="center">SWD</text>
 <text x="310.134" y="274.066" size="2.54" layer="94" font="vector" align="center">USB</text>
-<text x="266.192" y="205.486" size="2.54" layer="94" font="vector" align="center">Headers </text>
+<text x="250.952" y="205.486" size="2.54" layer="94" font="vector" align="center">Headers </text>
 <text x="221.234" y="274.066" size="2.54" layer="94" font="vector" align="center">RTC</text>
 <text x="81.534" y="274.066" size="2.54" layer="94" font="vector" align="center">Voltage Regulation</text>
 <wire x1="0" y1="167.64" x2="91.44" y2="167.64" width="0.2032" layer="97" style="longdash"/>
@@ -29291,16 +29327,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="279.4" y1="215.9" x2="347.98" y2="215.9" width="0.2032" layer="97" style="longdash"/>
 <wire x1="279.4" y1="279.4" x2="279.4" y2="215.9" width="0.2032" layer="97" style="longdash"/>
 <wire x1="167.64" y1="215.9" x2="279.4" y2="215.9" width="0.2032" layer="97" style="longdash"/>
-<text x="56.134" y="144.526" size="2.54" layer="94" font="vector" align="center">MicroMod Connector</text>
+<text x="81.534" y="157.226" size="2.54" layer="94" font="vector" align="center">MicroMod Connector</text>
 <wire x1="0" y1="233.68" x2="91.44" y2="233.68" width="0.2032" layer="97" style="longdash"/>
 <wire x1="91.44" y1="233.68" x2="167.64" y2="233.68" width="0.2032" layer="97" style="longdash"/>
 <wire x1="347.98" y1="279.4" x2="347.98" y2="215.9" width="0.2032" layer="97" style="longdash"/>
 <wire x1="347.98" y1="215.9" x2="431.8" y2="215.9" width="0.2032" layer="97" style="longdash"/>
 <text x="349.504" y="11.176" size="2.54" layer="94">Elias Santistevan</text>
 <wire x1="91.44" y1="233.68" x2="91.44" y2="167.64" width="0.2032" layer="97" style="longdash"/>
-<text x="124.46" y="226.06" size="2.54" layer="94" font="vector">LEDs</text>
-<text x="35.56" y="226.06" size="2.54" layer="94" font="vector">USB Host</text>
-<text x="134.62" y="48.26" size="2.54" layer="94" font="vector">Buttons</text>
+<text x="124.46" y="226.06" size="2.54" layer="94" font="vector" align="center">LEDs</text>
+<text x="43.18" y="226.06" size="2.54" layer="94" font="vector" align="center">USB Host</text>
+<text x="137.16" y="53.34" size="2.54" layer="94" font="vector" align="center">Buttons</text>
 <text x="420.878" y="6.858" size="2.54" layer="94" font="vector">v10</text>
 <wire x1="167.64" y1="60.96" x2="109.22" y2="60.96" width="0.2032" layer="97" style="longdash"/>
 <wire x1="109.22" y1="60.96" x2="109.22" y2="0" width="0.2032" layer="97" style="longdash"/>
@@ -29311,7 +29347,7 @@ and USB-C at the same time.</text>
 and USB-C at the same time.</text>
 <wire x1="347.98" y1="215.9" x2="347.98" y2="190.5" width="0.2032" layer="97" style="longdash"/>
 <wire x1="347.98" y1="190.5" x2="431.8" y2="190.5" width="0.2032" layer="97" style="longdash"/>
-<text x="381" y="208.28" size="2.54" layer="94" font="vector">Testpoints</text>
+<text x="381" y="208.28" size="2.54" layer="94" font="vector" align="center">Testpoints</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -29521,8 +29557,8 @@ and USB-C at the same time.</text>
 <instance part="GND3" gate="1" x="45.72" y="190.5" smashed="yes">
 <attribute name="VALUE" x="45.72" y="190.246" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="45.72" y="208.28" smashed="yes">
-<attribute name="VALUE" x="45.72" y="211.074" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="45.72" y="218.44" smashed="yes">
+<attribute name="VALUE" x="45.72" y="221.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="J16" gate="J1" x="378.46" y="137.16" smashed="yes" rot="R180">
 <attribute name="VALUE" x="383.54" y="144.526" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -29572,7 +29608,7 @@ and USB-C at the same time.</text>
 </instance>
 <instance part="J22" gate="J1" x="276.86" y="154.94" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="271.78" y="162.306" size="1.778" layer="96" font="vector" rot="MR180"/>
-<attribute name="NAME" x="264.16" y="151.892" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="NAME" x="271.78" y="162.052" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
 <instance part="J21" gate="J1" x="355.6" y="137.16" smashed="yes" rot="MR180">
 <attribute name="NAME" x="350.52" y="129.032" size="1.778" layer="95" font="vector" rot="MR180"/>
@@ -29591,7 +29627,7 @@ and USB-C at the same time.</text>
 </instance>
 <instance part="J24" gate="G$1" x="276.86" y="68.58" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="271.78" y="81.026" size="1.778" layer="96" font="vector" rot="MR180"/>
-<attribute name="NAME" x="271.78" y="55.372" size="1.778" layer="95" font="vector" rot="MR180"/>
+<attribute name="NAME" x="271.78" y="80.772" size="1.778" layer="95" font="vector" rot="MR180"/>
 </instance>
 <instance part="J25" gate="G$1" x="276.86" y="45.72" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="271.78" y="58.166" size="1.778" layer="96" font="vector" rot="MR180"/>
@@ -29620,7 +29656,7 @@ and USB-C at the same time.</text>
 </instance>
 <instance part="J13" gate="G$1" x="276.86" y="134.62" smashed="yes">
 <attribute name="VALUE" x="271.78" y="122.174" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="271.78" y="147.828" size="1.778" layer="95" font="vector"/>
+<attribute name="NAME" x="271.78" y="122.428" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="GND25" gate="1" x="284.48" y="119.38" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="284.48" y="119.126" size="1.778" layer="96" rot="MR0" align="top-center"/>
@@ -29669,7 +29705,7 @@ and USB-C at the same time.</text>
 </instance>
 <instance part="J23" gate="G$1" x="312.42" y="68.58" smashed="yes" rot="R180">
 <attribute name="VALUE" x="317.5" y="81.026" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="317.5" y="55.372" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="NAME" x="314.96" y="80.772" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J26" gate="G$1" x="312.42" y="45.72" smashed="yes" rot="R180">
 <attribute name="VALUE" x="317.5" y="58.166" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -29683,6 +29719,10 @@ and USB-C at the same time.</text>
 </instance>
 <instance part="EN" gate="G$1" x="17.78" y="121.92" smashed="yes">
 <attribute name="NAME" x="16.51" y="124.206" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="D4" gate="G$1" x="45.72" y="213.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="48.006" y="213.868" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="48.006" y="212.852" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -30088,13 +30128,9 @@ and USB-C at the same time.</text>
 <junction x="129.54" y="259.08"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="VBUS"/>
-<wire x1="48.26" y1="205.74" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="205.74" x2="45.72" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="SUPPLY2" gate="G$1" pin="V_USB"/>
-<pinref part="J11" gate="J1" pin="1"/>
-<wire x1="30.48" y1="205.74" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
-<junction x="45.72" y="205.74"/>
+<wire x1="45.72" y1="215.9" x2="45.72" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -31108,6 +31144,17 @@ and USB-C at the same time.</text>
 <pinref part="J6" gate="J1" pin="3.3V_EN"/>
 <pinref part="EN" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="121.92" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="VBUS"/>
+<pinref part="J11" gate="J1" pin="1"/>
+<wire x1="30.48" y1="205.74" x2="45.72" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="45.72" y1="205.74" x2="48.26" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="205.74" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
+<junction x="45.72" y="205.74"/>
 </segment>
 </net>
 </nets>
