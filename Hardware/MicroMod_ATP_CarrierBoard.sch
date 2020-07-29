@@ -29279,7 +29279,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
  it removes the 6V/2A fuse. </text>
 <text x="381.254" y="274.066" size="2.54" layer="94" font="vector" align="center">SWD</text>
 <text x="310.134" y="274.066" size="2.54" layer="94" font="vector" align="center">USB</text>
-<text x="301.752" y="205.486" size="2.54" layer="94" font="vector" align="center">Headers </text>
+<text x="266.192" y="205.486" size="2.54" layer="94" font="vector" align="center">Headers </text>
 <text x="221.234" y="274.066" size="2.54" layer="94" font="vector" align="center">RTC</text>
 <text x="81.534" y="274.066" size="2.54" layer="94" font="vector" align="center">Voltage Regulation</text>
 <wire x1="0" y1="167.64" x2="91.44" y2="167.64" width="0.2032" layer="97" style="longdash"/>
