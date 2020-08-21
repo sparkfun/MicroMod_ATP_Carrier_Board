@@ -24996,7 +24996,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CONN-15213" constant="no"/>
+<attribute name="PROD_ID" value="CONN-15262" constant="no"/>
 </technology>
 </technologies>
 </device>

@@ -31422,7 +31422,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="J10" library="SparkFun-Connectors" package="1X05_SMD_VERTICAL_COMBO" value="" x="81.28" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="84.201" y="25.908" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-15213" x="81.28" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROD_ID" value="CONN-15262" x="81.28" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="77.851" y="25.908" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="U$22" library="headtop" package="#CAN_RX#9" value="" x="63.5" y="45.212" smashed="yes" rot="R90"/>
