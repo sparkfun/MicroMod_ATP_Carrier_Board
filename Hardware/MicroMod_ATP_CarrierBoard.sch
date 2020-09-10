@@ -23424,6 +23424,33 @@ Used as a test point connection for pogo pins or other debugging tools.
 <text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="JST-4-SMD">
+<description>&lt;h3&gt;JST 4 Pin Right Angle SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;li&gt;Pin pitch: 2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-5.99" y1="-2.07" x2="-5.99" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="-5.99" y1="-5.57" x2="-5.19" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="-5.19" y1="-5.57" x2="-5.19" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="-5.19" y1="-3.07" x2="-3.99" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="4.01" y1="-3.07" x2="5.21" y2="-3.07" width="0.2032" layer="21"/>
+<wire x1="5.21" y1="-3.07" x2="5.21" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="5.21" y1="-5.57" x2="6.01" y2="-5.57" width="0.2032" layer="21"/>
+<wire x1="6.01" y1="-5.57" x2="6.01" y2="-2.07" width="0.2032" layer="21"/>
+<wire x1="4.01" y1="1.93" x2="-3.99" y2="1.93" width="0.2032" layer="21"/>
+<smd name="4" x="-2.99" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<smd name="1" x="3.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-5.39" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="5.41" y="0.43" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="1.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
+<text x="-1.397" y="0.635" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="3" x="-0.99" y="-4.77" dx="1" dy="4.6" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-C-MINIMUM">
@@ -24457,6 +24484,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technologies>
 </device>
 <device name="1X04_NO_SILK_NO_POP" package="1X04_NO_SILK">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JST-SMD" package="JST-4-SMD">
 <connects>
 <connect gate="J1" pin="1" pad="1"/>
 <connect gate="J1" pin="2" pad="2"/>
@@ -28796,12 +28834,12 @@ Out</text>
 <wire x1="20.32" y1="53.34" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-45.72" x2="-20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-45.72" x2="-20.32" y2="53.34" width="0.254" layer="94"/>
-<pin name="SPI_SCK/SDIO_CLK" x="22.86" y="50.8" length="short" rot="R180"/>
-<pin name="SPI_SDO/SDIO_CMD" x="22.86" y="48.26" length="short" rot="R180"/>
+<pin name="SPI_SCK1/SDIO_CLK" x="22.86" y="50.8" length="short" rot="R180"/>
+<pin name="SPI_SDO1/SDIO_CMD" x="22.86" y="48.26" length="short" rot="R180"/>
 <pin name="SDIO_DATA1" x="22.86" y="43.18" length="short" rot="R180"/>
-<pin name="SPI_SDI/SDIO_DATA0" x="22.86" y="45.72" length="short" rot="R180"/>
+<pin name="SPI_SDI1/SDIO_DATA0" x="22.86" y="45.72" length="short" rot="R180"/>
 <pin name="SDIO_DATA2" x="22.86" y="40.64" length="short" rot="R180"/>
-<pin name="SPI_!CS!/SDIO_DATA3" x="22.86" y="38.1" length="short" rot="R180"/>
+<pin name="SPI_!CS1!/SDIO_DATA3" x="22.86" y="38.1" length="short" rot="R180"/>
 <pin name="AUD_MCLK" x="-22.86" y="0" length="short"/>
 <pin name="D0" x="22.86" y="10.16" length="short" rot="R180"/>
 <pin name="SWDCK" x="-22.86" y="5.08" length="short"/>
@@ -28814,9 +28852,9 @@ Out</text>
 <pin name="A0" x="22.86" y="20.32" length="short" rot="R180"/>
 <pin name="PWM1" x="22.86" y="12.7" length="short" rot="R180"/>
 <pin name="PWM0" x="22.86" y="15.24" length="short" rot="R180"/>
-<pin name="SPI_SCK1" x="22.86" y="33.02" length="short" rot="R180"/>
-<pin name="SPI_SDO1" x="22.86" y="30.48" length="short" rot="R180"/>
-<pin name="SPI_SDI1" x="22.86" y="27.94" length="short" rot="R180"/>
+<pin name="SPI_SCK" x="22.86" y="33.02" length="short" rot="R180"/>
+<pin name="SPI_SDO" x="22.86" y="30.48" length="short" rot="R180"/>
+<pin name="SPI_SDI" x="22.86" y="27.94" length="short" rot="R180"/>
 <pin name="BATT_VIN/3" x="-22.86" y="-30.48" length="short"/>
 <pin name="RX1" x="22.86" y="0" length="short" rot="R180"/>
 <pin name="TX1" x="22.86" y="2.54" length="short" rot="R180"/>
@@ -28852,7 +28890,7 @@ Out</text>
 <pin name="G8" x="22.86" y="-35.56" length="short" rot="R180"/>
 <pin name="G9/ADC_D-/CAM_HSYNC" x="22.86" y="-38.1" length="short" rot="R180"/>
 <pin name="G10/ADC_D+/CAM_VSYNC" x="22.86" y="-40.64" length="short" rot="R180"/>
-<pin name="SPI_!CS!1" x="22.86" y="25.4" length="short" rot="R180"/>
+<pin name="SPI_!CS!" x="22.86" y="25.4" length="short" rot="R180"/>
 <text x="-20.32" y="53.848" size="1.778" layer="95">&gt;Name</text>
 <text x="-20.32" y="-48.26" size="1.778" layer="96">&gt;Value</text>
 <pin name="RTC_3V" x="-22.86" y="38.1" length="short"/>
@@ -28914,14 +28952,14 @@ Out</text>
 <connect gate="J1" pin="RX2" pad="20"/>
 <connect gate="J1" pin="SDIO_DATA1" pad="66"/>
 <connect gate="J1" pin="SDIO_DATA2" pad="68"/>
-<connect gate="J1" pin="SPI_!CS!/SDIO_DATA3" pad="70"/>
-<connect gate="J1" pin="SPI_!CS!1" pad="55"/>
-<connect gate="J1" pin="SPI_SCK/SDIO_CLK" pad="60"/>
-<connect gate="J1" pin="SPI_SCK1" pad="57"/>
-<connect gate="J1" pin="SPI_SDI/SDIO_DATA0" pad="64"/>
-<connect gate="J1" pin="SPI_SDI1" pad="61"/>
-<connect gate="J1" pin="SPI_SDO/SDIO_CMD" pad="62"/>
-<connect gate="J1" pin="SPI_SDO1" pad="59"/>
+<connect gate="J1" pin="SPI_!CS!" pad="55"/>
+<connect gate="J1" pin="SPI_!CS1!/SDIO_DATA3" pad="70"/>
+<connect gate="J1" pin="SPI_SCK" pad="57"/>
+<connect gate="J1" pin="SPI_SCK1/SDIO_CLK" pad="60"/>
+<connect gate="J1" pin="SPI_SDI" pad="61"/>
+<connect gate="J1" pin="SPI_SDI1/SDIO_DATA0" pad="64"/>
+<connect gate="J1" pin="SPI_SDO" pad="59"/>
+<connect gate="J1" pin="SPI_SDO1/SDIO_CMD" pad="62"/>
 <connect gate="J1" pin="SWDCK" pad="21"/>
 <connect gate="J1" pin="SWDIO" pad="23"/>
 <connect gate="J1" pin="TX1" pad="17"/>
@@ -28981,14 +29019,14 @@ Out</text>
 <connect gate="J1" pin="RX2" pad="20"/>
 <connect gate="J1" pin="SDIO_DATA1" pad="66"/>
 <connect gate="J1" pin="SDIO_DATA2" pad="68"/>
-<connect gate="J1" pin="SPI_!CS!/SDIO_DATA3" pad="70"/>
-<connect gate="J1" pin="SPI_!CS!1" pad="55"/>
-<connect gate="J1" pin="SPI_SCK/SDIO_CLK" pad="60"/>
-<connect gate="J1" pin="SPI_SCK1" pad="57"/>
-<connect gate="J1" pin="SPI_SDI/SDIO_DATA0" pad="64"/>
-<connect gate="J1" pin="SPI_SDI1" pad="61"/>
-<connect gate="J1" pin="SPI_SDO/SDIO_CMD" pad="62"/>
-<connect gate="J1" pin="SPI_SDO1" pad="59"/>
+<connect gate="J1" pin="SPI_!CS!" pad="55"/>
+<connect gate="J1" pin="SPI_!CS1!/SDIO_DATA3" pad="70"/>
+<connect gate="J1" pin="SPI_SCK" pad="57"/>
+<connect gate="J1" pin="SPI_SCK1/SDIO_CLK" pad="60"/>
+<connect gate="J1" pin="SPI_SDI" pad="61"/>
+<connect gate="J1" pin="SPI_SDI1/SDIO_DATA0" pad="64"/>
+<connect gate="J1" pin="SPI_SDO" pad="59"/>
+<connect gate="J1" pin="SPI_SDO1/SDIO_CMD" pad="62"/>
 <connect gate="J1" pin="SWDCK" pad="21"/>
 <connect gate="J1" pin="SWDIO" pad="23"/>
 <connect gate="J1" pin="TX1" pad="17"/>
@@ -29748,39 +29786,19 @@ and USB-C at the same time.</text>
 </net>
 <net name="SCK" class="0">
 <segment>
-<wire x1="78.74" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<label x="81.28" y="132.08" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_SCK/SDIO_CLK"/>
+<wire x1="78.74" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
+<label x="81.28" y="114.3" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_SCK"/>
 </segment>
 <segment>
-<wire x1="307.34" y1="129.54" x2="307.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="127" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="121.92" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
-<label x="314.96" y="121.92" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="12"/>
-<wire x1="312.42" y1="129.54" x2="307.34" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="J13" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="127" x2="307.34" y2="127" width="0.1524" layer="91"/>
-<junction x="307.34" y="127"/>
-</segment>
-</net>
-<net name="!CS!/DAT3" class="0">
-<segment>
-<wire x1="78.74" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
-<label x="81.28" y="119.38" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_!CS!/SDIO_DATA3"/>
-</segment>
-<segment>
-<wire x1="292.1" y1="139.7" x2="292.1" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J12" gate="G$1" pin="7"/>
-<wire x1="312.42" y1="142.24" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J13" gate="G$1" pin="6"/>
-<wire x1="294.64" y1="142.24" x2="292.1" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="139.7" x2="292.1" y2="139.7" width="0.1524" layer="91"/>
-<label x="307.34" y="175.26" size="1.27" layer="95" xref="yes"/>
-<wire x1="294.64" y1="175.26" x2="307.34" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="175.26" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
-<junction x="294.64" y="142.24"/>
+<wire x1="302.26" y1="149.86" x2="302.26" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="167.64" x2="307.34" y2="167.64" width="0.1524" layer="91"/>
+<label x="307.34" y="167.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="4"/>
+<pinref part="J22" gate="J1" pin="4"/>
+<wire x1="312.42" y1="149.86" x2="302.26" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="149.86" x2="281.94" y2="149.86" width="0.1524" layer="91"/>
+<junction x="302.26" y="149.86"/>
 </segment>
 </net>
 <net name="DAT2" class="0">
@@ -30469,38 +30487,21 @@ and USB-C at the same time.</text>
 </net>
 <net name="COPI" class="0">
 <segment>
-<wire x1="78.74" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
-<label x="81.28" y="129.54" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_SDO/SDIO_CMD"/>
+<wire x1="78.74" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
+<label x="81.28" y="111.76" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_SDO"/>
 </segment>
 <segment>
-<wire x1="304.8" y1="132.08" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="129.54" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="119.38" x2="314.96" y2="119.38" width="0.1524" layer="91"/>
-<label x="314.96" y="119.38" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="11"/>
-<wire x1="312.42" y1="132.08" x2="304.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="J13" gate="G$1" pin="2"/>
-<wire x1="281.94" y1="129.54" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
-<junction x="304.8" y="129.54"/>
-</segment>
-</net>
-<net name="CIPO/DAT0" class="0">
-<segment>
-<wire x1="78.74" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
-<label x="81.28" y="127" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_SDI/SDIO_DATA0"/>
-</segment>
-<segment>
-<wire x1="302.26" y1="134.62" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="132.08" x2="302.26" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="116.84" x2="314.96" y2="116.84" width="0.1524" layer="91"/>
-<label x="314.96" y="116.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="10"/>
-<wire x1="312.42" y1="134.62" x2="302.26" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="J13" gate="G$1" pin="3"/>
-<wire x1="281.94" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
-<junction x="302.26" y="132.08"/>
+<wire x1="299.72" y1="147.32" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="170.18" x2="307.34" y2="170.18" width="0.1524" layer="91"/>
+<label x="307.34" y="170.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="5"/>
+<wire x1="287.02" y1="147.32" x2="299.72" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="147.32" x2="312.42" y2="147.32" width="0.1524" layer="91"/>
+<junction x="299.72" y="147.32"/>
+<pinref part="J13" gate="G$1" pin="8"/>
+<wire x1="281.94" y1="144.78" x2="287.02" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="144.78" x2="287.02" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="G0" class="0">
@@ -30743,74 +30744,38 @@ and USB-C at the same time.</text>
 </net>
 <net name="COPI1" class="0">
 <segment>
-<wire x1="78.74" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<label x="81.28" y="111.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_SDO1"/>
+<wire x1="78.74" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
+<label x="81.28" y="129.54" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_SDO1/SDIO_CMD"/>
 </segment>
 <segment>
-<wire x1="299.72" y1="147.32" x2="299.72" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="170.18" x2="307.34" y2="170.18" width="0.1524" layer="91"/>
-<label x="307.34" y="170.18" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="5"/>
-<wire x1="287.02" y1="147.32" x2="299.72" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="147.32" x2="312.42" y2="147.32" width="0.1524" layer="91"/>
-<junction x="299.72" y="147.32"/>
-<pinref part="J13" gate="G$1" pin="8"/>
-<wire x1="281.94" y1="144.78" x2="287.02" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="144.78" x2="287.02" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CIPO1" class="0">
-<segment>
-<wire x1="78.74" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
-<label x="81.28" y="109.22" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_SDI1"/>
-</segment>
-<segment>
-<wire x1="297.18" y1="144.78" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="172.72" x2="307.34" y2="172.72" width="0.1524" layer="91"/>
-<label x="307.34" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="6"/>
-<wire x1="312.42" y1="144.78" x2="297.18" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="144.78" x2="289.56" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="144.78" x2="289.56" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="J13" gate="G$1" pin="7"/>
-<wire x1="289.56" y1="142.24" x2="281.94" y2="142.24" width="0.1524" layer="91"/>
-<junction x="297.18" y="144.78"/>
+<wire x1="304.8" y1="132.08" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="129.54" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="119.38" x2="314.96" y2="119.38" width="0.1524" layer="91"/>
+<label x="314.96" y="119.38" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="11"/>
+<wire x1="312.42" y1="132.08" x2="304.8" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="J13" gate="G$1" pin="2"/>
+<wire x1="281.94" y1="129.54" x2="304.8" y2="129.54" width="0.1524" layer="91"/>
+<junction x="304.8" y="129.54"/>
 </segment>
 </net>
 <net name="SCK1" class="0">
 <segment>
-<wire x1="78.74" y1="114.3" x2="81.28" y2="114.3" width="0.1524" layer="91"/>
-<label x="81.28" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_SCK1"/>
+<wire x1="78.74" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<label x="81.28" y="132.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_SCK1/SDIO_CLK"/>
 </segment>
 <segment>
-<wire x1="302.26" y1="149.86" x2="302.26" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="167.64" x2="307.34" y2="167.64" width="0.1524" layer="91"/>
-<label x="307.34" y="167.64" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="4"/>
-<pinref part="J22" gate="J1" pin="4"/>
-<wire x1="312.42" y1="149.86" x2="302.26" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="149.86" x2="281.94" y2="149.86" width="0.1524" layer="91"/>
-<junction x="302.26" y="149.86"/>
-</segment>
-</net>
-<net name="!CS1" class="0">
-<segment>
-<wire x1="78.74" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
-<label x="81.28" y="106.68" size="1.27" layer="95" xref="yes"/>
-<pinref part="J6" gate="J1" pin="SPI_!CS!1"/>
-</segment>
-<segment>
-<wire x1="304.8" y1="165.1" x2="307.34" y2="165.1" width="0.1524" layer="91"/>
-<label x="307.34" y="165.1" size="1.27" layer="95" xref="yes"/>
-<pinref part="J12" gate="G$1" pin="3"/>
-<pinref part="J22" gate="J1" pin="3"/>
-<wire x1="312.42" y1="152.4" x2="304.8" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="152.4" x2="281.94" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="165.1" x2="304.8" y2="152.4" width="0.1524" layer="91"/>
-<junction x="304.8" y="152.4"/>
+<wire x1="307.34" y1="129.54" x2="307.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="127" x2="307.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="121.92" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
+<label x="314.96" y="121.92" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="12"/>
+<wire x1="312.42" y1="129.54" x2="307.34" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="J13" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="127" x2="307.34" y2="127" width="0.1524" layer="91"/>
+<junction x="307.34" y="127"/>
 </segment>
 </net>
 <net name="SCL1" class="0">
@@ -31155,6 +31120,79 @@ and USB-C at the same time.</text>
 <wire x1="45.72" y1="205.74" x2="48.26" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="205.74" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
 <junction x="45.72" y="205.74"/>
+</segment>
+</net>
+<net name="CIPO1/DAT0" class="0">
+<segment>
+<wire x1="78.74" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
+<label x="81.28" y="127" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_SDI1/SDIO_DATA0"/>
+</segment>
+<segment>
+<wire x1="302.26" y1="134.62" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="132.08" x2="302.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="116.84" x2="314.96" y2="116.84" width="0.1524" layer="91"/>
+<label x="314.96" y="116.84" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="10"/>
+<wire x1="312.42" y1="134.62" x2="302.26" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="J13" gate="G$1" pin="3"/>
+<wire x1="281.94" y1="132.08" x2="302.26" y2="132.08" width="0.1524" layer="91"/>
+<junction x="302.26" y="132.08"/>
+</segment>
+</net>
+<net name="!CS1!/DAT3" class="0">
+<segment>
+<wire x1="78.74" y1="119.38" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
+<label x="81.28" y="119.38" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_!CS1!/SDIO_DATA3"/>
+</segment>
+<segment>
+<wire x1="292.1" y1="139.7" x2="292.1" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="J12" gate="G$1" pin="7"/>
+<wire x1="312.42" y1="142.24" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="J13" gate="G$1" pin="6"/>
+<wire x1="294.64" y1="142.24" x2="292.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="139.7" x2="292.1" y2="139.7" width="0.1524" layer="91"/>
+<label x="307.34" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="294.64" y1="175.26" x2="307.34" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="175.26" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
+<junction x="294.64" y="142.24"/>
+</segment>
+</net>
+<net name="CIPO" class="0">
+<segment>
+<wire x1="78.74" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<label x="81.28" y="109.22" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_SDI"/>
+</segment>
+<segment>
+<wire x1="297.18" y1="144.78" x2="297.18" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="172.72" x2="307.34" y2="172.72" width="0.1524" layer="91"/>
+<label x="307.34" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="6"/>
+<wire x1="312.42" y1="144.78" x2="297.18" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="144.78" x2="289.56" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="144.78" x2="289.56" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="J13" gate="G$1" pin="7"/>
+<wire x1="289.56" y1="142.24" x2="281.94" y2="142.24" width="0.1524" layer="91"/>
+<junction x="297.18" y="144.78"/>
+</segment>
+</net>
+<net name="!CS!" class="0">
+<segment>
+<wire x1="78.74" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<label x="81.28" y="106.68" size="1.27" layer="95" xref="yes"/>
+<pinref part="J6" gate="J1" pin="SPI_!CS!"/>
+</segment>
+<segment>
+<wire x1="304.8" y1="165.1" x2="307.34" y2="165.1" width="0.1524" layer="91"/>
+<label x="307.34" y="165.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="J12" gate="G$1" pin="3"/>
+<pinref part="J22" gate="J1" pin="3"/>
+<wire x1="312.42" y1="152.4" x2="304.8" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="152.4" x2="281.94" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="165.1" x2="304.8" y2="152.4" width="0.1524" layer="91"/>
+<junction x="304.8" y="152.4"/>
 </segment>
 </net>
 </nets>
