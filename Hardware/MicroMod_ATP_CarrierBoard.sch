@@ -29340,6 +29340,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 <part name="EN" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-LSM115JE3" value="1A/15V/220mV"/>
+<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -29385,7 +29387,7 @@ and USB-C at the same time.</text>
 and USB-C at the same time.</text>
 <wire x1="347.98" y1="215.9" x2="347.98" y2="190.5" width="0.2032" layer="97" style="longdash"/>
 <wire x1="347.98" y1="190.5" x2="431.8" y2="190.5" width="0.2032" layer="97" style="longdash"/>
-<text x="381" y="208.28" size="2.54" layer="94" font="vector" align="center">Testpoints</text>
+<text x="381" y="213.36" size="2.54" layer="94" font="vector" align="center">Testpoints</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -29625,24 +29627,24 @@ and USB-C at the same time.</text>
 <attribute name="NAME" x="193.04" y="53.848" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J19" gate="G$1" x="408.94" y="137.16" smashed="yes" rot="R180">
-<attribute name="VALUE" x="414.02" y="142.494" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="VALUE" x="424.18" y="142.494" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 <attribute name="NAME" x="414.02" y="129.286" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 <instance part="J20" gate="G$1" x="408.94" y="96.52" smashed="yes" rot="R180">
-<attribute name="VALUE" x="414.02" y="101.854" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="VALUE" x="426.72" y="101.854" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 <attribute name="NAME" x="414.02" y="88.646" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="GND13" gate="1" x="398.78" y="127" smashed="yes">
-<attribute name="VALUE" x="398.78" y="126.746" size="1.778" layer="96" align="top-center"/>
+<instance part="GND13" gate="1" x="396.24" y="127" smashed="yes">
+<attribute name="VALUE" x="396.24" y="126.746" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="398.78" y="142.24" smashed="yes">
-<attribute name="VALUE" x="398.78" y="145.034" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="398.78" y="147.32" smashed="yes">
+<attribute name="VALUE" x="398.78" y="150.114" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND17" gate="1" x="398.78" y="86.36" smashed="yes">
-<attribute name="VALUE" x="398.78" y="86.106" size="1.778" layer="96" align="top-center"/>
+<instance part="GND17" gate="1" x="396.24" y="86.36" smashed="yes">
+<attribute name="VALUE" x="396.24" y="86.106" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="398.78" y="101.6" smashed="yes">
-<attribute name="VALUE" x="398.78" y="104.394" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY12" gate="G$1" x="398.78" y="104.14" smashed="yes">
+<attribute name="VALUE" x="398.78" y="106.934" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="J22" gate="J1" x="276.86" y="154.94" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="271.78" y="162.306" size="1.778" layer="96" font="vector" rot="MR180"/>
@@ -29751,9 +29753,9 @@ and USB-C at the same time.</text>
 </instance>
 <instance part="LOGO1" gate="G$1" x="319.278" y="32.004" smashed="yes"/>
 <instance part="LOGO2" gate="G$1" x="411.48" y="40.64" smashed="yes"/>
-<instance part="TP1" gate="G$1" x="393.7" y="200.66" smashed="yes">
-<attribute name="NAME" x="391.16" y="203.2" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="391.16" y="198.12" size="1.778" layer="96" font="vector"/>
+<instance part="TP1" gate="G$1" x="393.7" y="205.74" smashed="yes">
+<attribute name="NAME" x="391.16" y="208.28" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="391.16" y="203.2" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="EN" gate="G$1" x="17.78" y="121.92" smashed="yes">
 <attribute name="NAME" x="16.51" y="124.206" size="1.778" layer="95" font="vector"/>
@@ -29761,6 +29763,14 @@ and USB-C at the same time.</text>
 <instance part="D4" gate="G$1" x="45.72" y="213.36" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.006" y="213.868" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="48.006" y="212.852" size="1.778" layer="96" font="vector" align="top-left"/>
+</instance>
+<instance part="TP2" gate="G$1" x="393.7" y="200.66" smashed="yes">
+<attribute name="NAME" x="391.16" y="203.2" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="391.16" y="198.12" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="TP3" gate="G$1" x="393.7" y="195.58" smashed="yes">
+<attribute name="NAME" x="391.16" y="198.12" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="391.16" y="193.04" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -29928,18 +29938,6 @@ and USB-C at the same time.</text>
 <junction x="45.72" y="198.12"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="132.08" x2="398.78" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="132.08" x2="398.78" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="J19" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="401.32" y1="91.44" x2="398.78" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="91.44" x2="398.78" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<pinref part="J20" gate="G$1" pin="4"/>
-</segment>
-<segment>
 <wire x1="360.68" y1="132.08" x2="363.22" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="363.22" y1="132.08" x2="363.22" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -29994,6 +29992,18 @@ and USB-C at the same time.</text>
 <junction x="284.48" y="154.94"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="J20" gate="G$1" pin="1"/>
+<wire x1="401.32" y1="99.06" x2="396.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="99.06" x2="396.24" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J19" gate="G$1" pin="1"/>
+<wire x1="401.32" y1="139.7" x2="396.24" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="396.24" y1="139.7" x2="396.24" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -30031,16 +30041,10 @@ and USB-C at the same time.</text>
 <pinref part="MEAS" gate="JP1" pin="2"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="134.62" x2="398.78" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="398.78" y1="134.62" x2="398.78" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
-<pinref part="J19" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="398.78" y1="101.6" x2="398.78" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="93.98" x2="398.78" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
-<pinref part="J20" gate="G$1" pin="3"/>
+<pinref part="J19" gate="G$1" pin="2"/>
+<wire x1="398.78" y1="137.16" x2="398.78" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="137.16" x2="398.78" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="360.68" y1="134.62" x2="363.22" y2="134.62" width="0.1524" layer="91"/>
@@ -30086,6 +30090,12 @@ and USB-C at the same time.</text>
 <wire x1="284.48" y1="160.02" x2="284.48" y2="157.48" width="0.1524" layer="91"/>
 <junction x="284.48" y="157.48"/>
 <pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="J20" gate="G$1" pin="2"/>
+<wire x1="401.32" y1="96.52" x2="398.78" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
+<wire x1="398.78" y1="96.52" x2="398.78" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_N" class="2">
@@ -30180,9 +30190,9 @@ and USB-C at the same time.</text>
 <junction x="368.3" y="99.06"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="99.06" x2="396.24" y2="99.06" width="0.1524" layer="91"/>
-<label x="396.24" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J20" gate="G$1" pin="1"/>
+<wire x1="401.32" y1="93.98" x2="393.7" y2="93.98" width="0.1524" layer="91"/>
+<label x="393.7" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J20" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -30202,9 +30212,9 @@ and USB-C at the same time.</text>
 <junction x="365.76" y="96.52"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="96.52" x2="396.24" y2="96.52" width="0.1524" layer="91"/>
-<label x="396.24" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J20" gate="G$1" pin="2"/>
+<wire x1="401.32" y1="91.44" x2="393.7" y2="91.44" width="0.1524" layer="91"/>
+<label x="393.7" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J20" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="TX1" class="0">
@@ -30262,8 +30272,8 @@ and USB-C at the same time.</text>
 </segment>
 <segment>
 <pinref part="TP1" gate="G$1" pin="1"/>
-<wire x1="386.08" y1="200.66" x2="393.7" y2="200.66" width="0.1524" layer="91" style="longdash"/>
-<label x="386.08" y="200.66" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="391.16" y1="205.74" x2="393.7" y2="205.74" width="0.1524" layer="91" style="longdash"/>
+<label x="391.16" y="205.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -30277,6 +30287,11 @@ and USB-C at the same time.</text>
 <label x="30.48" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J6" gate="J1" pin="SWDIO"/>
 </segment>
+<segment>
+<pinref part="TP2" gate="G$1" pin="1"/>
+<wire x1="391.16" y1="200.66" x2="393.7" y2="200.66" width="0.1524" layer="91"/>
+<label x="391.16" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SWDCK" class="0">
 <segment>
@@ -30288,6 +30303,11 @@ and USB-C at the same time.</text>
 <wire x1="33.02" y1="86.36" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
 <label x="30.48" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J6" gate="J1" pin="SWDCK"/>
+</segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="1"/>
+<wire x1="391.16" y1="195.58" x2="393.7" y2="195.58" width="0.1524" layer="91"/>
+<label x="391.16" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -30785,11 +30805,6 @@ and USB-C at the same time.</text>
 <pinref part="J6" gate="J1" pin="I2C_SCL1"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="139.7" x2="396.24" y2="139.7" width="0.1524" layer="91"/>
-<label x="396.24" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J19" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="J21" gate="J1" pin="1"/>
 <pinref part="J16" gate="J1" pin="1"/>
 <wire x1="360.68" y1="139.7" x2="368.3" y2="139.7" width="0.1524" layer="91"/>
@@ -30798,6 +30813,11 @@ and USB-C at the same time.</text>
 <wire x1="368.3" y1="144.78" x2="370.84" y2="144.78" width="0.1524" layer="91"/>
 <junction x="368.3" y="139.7"/>
 <label x="370.84" y="144.78" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J19" gate="G$1" pin="4"/>
+<wire x1="401.32" y1="132.08" x2="393.7" y2="132.08" width="0.1524" layer="91"/>
+<label x="393.7" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA1" class="0">
@@ -30817,9 +30837,9 @@ and USB-C at the same time.</text>
 <label x="370.84" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="401.32" y1="137.16" x2="396.24" y2="137.16" width="0.1524" layer="91"/>
-<label x="396.24" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J19" gate="G$1" pin="2"/>
+<pinref part="J19" gate="G$1" pin="3"/>
+<wire x1="401.32" y1="134.62" x2="393.7" y2="134.62" width="0.1524" layer="91"/>
+<label x="393.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="G9/ADC_N" class="2">
