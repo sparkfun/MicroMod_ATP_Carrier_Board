@@ -1,4 +1,4 @@
-SparkFun <PRODUCT NAME>
+SparkFun MicroMod ATP Carrier Board
 ========================================
 
 [![SparkFun MicroMod ATP Carrier Board (DEV-16885)](https://cdn.sparkfun.com/assets/parts/1/5/8/1/2/16885-SparkFun_MicroMod_ATP_Carrier_Board-01a.jpg)](https://www.sparkfun.com/products/16885)
