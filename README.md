@@ -21,8 +21,7 @@ Documentation
 
 Product Versions
 ----------------
-* [DEV-16885](https://www.sparkfun.com/products/16885)- Basic part and short description here
-
+* [DEV-16885](https://www.sparkfun.com/products/16885)
 Version History
 ---------------
 * [v1.1](URL for tag specific to this version) - Initial Release 
