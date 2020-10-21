@@ -25,7 +25,7 @@ Product Versions
 
 Version History
 ---------------
-* v1.1 - Initial Release 
+* [v1.1](https://github.com/sparkfun/MicroMod_ATP_Carrier_Board/tree/v1.1) - Initial Release 
 
 License Information
 -------------------
